@@ -1,0 +1,36 @@
+/* http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs/ */
+
+ul, li {
+	list-style-type		: none;
+	padding				: 0;
+	margin				: 0;
+	/*font-size			: 16px; /* UPDATE */
+}
+
+#crumbs {
+	border				: 1px solid #dedede;
+	height				: 2.3em;
+}
+
+#crumbs li {
+	float				: left;
+	line-height			: 2.3em;
+	padding-left		: .75em;
+	color				: #777;
+}
+
+#crumbs li a {
+	display				: block;
+	padding				: 0 15px 0 0;
+	background			: url(../images/forms/crumbs.gif) no-repeat right center;
+}
+
+#crumbs li a:link, #crumbs li a:visited {
+	text-decoration		: none;
+	color				: #777;
+}
+
+#crumbs li a:hover, #crumbs li a:focus {
+	color				: #dd2c0d;
+}
+

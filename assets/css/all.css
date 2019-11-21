@@ -1,0 +1,287 @@
+/* TOP, RIGHT, BOTTOM, LEFT */
+
+/* BEGIN ELEMENT */
+a { 
+	color				: #6388b9;
+	text-decoration		: none;
+	outline				: none;
+}
+
+h1,p { 
+	margin				: 5px 0 5px 0; 
+}
+
+html,body {
+	background-color	: #F4F9FF;
+	font-family			: Lucida Grande, Verdana, Sans-serif;
+	font-size			: 11px;
+    margin				: 0 0 0 0;
+    padding				: 0 0 0 0;		
+}
+
+ul {
+    margin				: 0 0 0 0;
+    padding				: 0 0 0 0;
+}
+/* END ELEMENT */
+
+/* BEGIN FORM LAYOUT */
+#content {	
+	min-height			: 503px;
+	padding				: 5px 5px 5px 5px;
+}
+
+#content-container {
+    min-height			: 400px;
+    background-color	: #375A90;
+	border-bottom		: 1px solid #fff;
+	box-shadow			: 0 1px 3px rgba(0,0,0,0.5);
+	padding				: 5px 5px 5px 5px;
+	-moz-box-shadow		: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow	: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#content-top {
+	background-color	: #7E9DCC;
+	border		        : 1px solid #fff;
+	padding				: 12px 12px 0 12px;
+}
+
+#footer {
+	/*background-color	: #3A3A3A;*/
+	background-color	: #375A90;
+	border				: 1px solid #fff;
+	bottom				: 0px;
+    height				: 45px;
+	left				: 0px;
+	padding-top			: 14px;
+	text-align			: center;
+	-moz-box-shadow		: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow	: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#header {
+    height				: 85px;
+    /*background-color	: #303030;*/
+	background-color	: #375A90;
+	border-bottom		: 1px solid #fff;
+	box-shadow			: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow		: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow	: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#leftside {
+    float				: left;
+	margin				: 20px 0 0 45px;
+    width				: 48%;
+}
+
+#logo {
+    float				: left;   
+	padding				: 20px 0 0 75px;
+}
+
+#rightside {
+	float				: right;
+	margin				: 20px 75px 0 0;
+	width				: 30%;
+}
+
+#tab-container {
+    height				: 35px;
+}
+
+ul#tab {
+	padding				: 0 5px 10px 0;
+}
+
+ul#tab li {
+	display				: inline;
+	float				: left;
+	position			: relative;
+	margin-right		: 5px;
+}
+
+ul#tab li a {
+	background			: #7E9DCC;
+	padding				: 10px 25px; /* UPDATE */
+	color				: #F4F9FF;
+	text-decoration		: none;
+	font-weight			: bold;
+	display				: block;
+}
+
+ul#tab li a:hover{
+	/*background		: #29b8f3;*/
+}
+
+ul#tab li a.active, ul#tab li a.active:hover{
+	background			: #375A90;
+	color				: #F4F9FF;
+}
+
+#user {
+    float				: right;    
+    padding				: 25px 50px 0 0;
+	text-align			: right;
+}
+/* END FORM LAYOUT */
+
+/* BEGIN COMPONENT */
+#panel {
+	width				: auto;
+	background			: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background			: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin				: auto;
+	position			: relative;
+	line-height			: 24px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius	: 10px;
+	border-radius		: 10px;
+	padding				: 10px 10px 0 10px;
+	border				: 1px solid #999;
+	border				: inset 1px solid #333;
+	-webkit-box-shadow	: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow		: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow			: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#loading {
+	position			: fixed;
+	left				: 0px;
+	top					: 0px;
+	width				: 100%;
+	height				: 100%;
+	z-index				: 9999;
+	background			: url(../../assets/images/forms/loading-animation.gif) 50% 50% no-repeat #ede9df;
+}
+/* END COMPONENT */
+
+/* BEGIN CLASS */
+.clear {
+    display				: block;
+	height				: 1px;
+	clear				: both;
+}
+/* END CLASS */
+
+/* BEGIN TABLE */
+.list-table {
+	font-family			: Lucida Grande, Verdana, Sans-serif;
+	font-size			: 10px;	
+}
+
+.custom-table {
+	width				: 100%; 
+	border-collapse		: collapse; 	
+}
+
+.custom-table td { 
+	padding				: 2px; 
+	border				: black 1px solid; /*#4e95f4 1px solid;*/
+}
+
+.record {
+	color				: red;
+	font-weight			: bold;
+}
+
+/* provide some minimal visual accomodation for IE8 and below */
+.custom-table tr {
+	background			: #b8d1f3;
+}
+
+.table-row-header {
+	font-size			: 13px;
+	font-weight			: bold;	
+	text-align			: center;
+	color				: white;
+}
+
+/*  Define the background color for all the ODD background rows  */
+.custom-table tr:nth-child(odd) { 
+	background			: white; /*#b8d1f3;*/
+}
+
+/*  Define the background color for all the EVEN background rows  */
+.custom-table tr:nth-child(even) {
+	background			: white; /*#dae5f4;*/
+}
+
+.custom-table tr:hover {
+	background 			: #ffff99;
+}
+
+.not-head {
+	background			: #7E9DCC; /*red;*/
+}
+/* END TABLE */
+
+/* BEGIN PAGINATION */
+/*
+Plugin Name: WP-Digg Style Paginator
+Plugin URI: http://www.mis-algoritmos.com/2007/09/09/wp-digg-style-pagination-plugin-v-10/
+Author: Victor De la Rocha
+Author URI: http://www.mis-algoritmos.com
+*/
+/*
+Plugin Name: WP-Digg Style Paginator
+Plugin URI: http://www.mis-algoritmos.com/2007/09/09/wp-digg-style-pagination-plugin-v-10/
+Author: Victor De la Rocha
+Author URI: http://www.mis-algoritmos.com
+*/
+/*CSS Yahoo new version style pagination*/
+div.pagination {
+	padding				: 10px;
+	margin				: 5px 0 5px 0;
+	text-align			: left;
+	font-family			: Tahoma,Helvetica,sans-serif;
+	font-size			: 11px;
+	font-weight			: bold;
+}
+	
+div.pagination a {
+	border				: 1px solid #ccdbe4;
+	margin-right		: 3px;
+	padding				: 2px 8px;
+	background-position	: bottom;
+	text-decoration		: none;
+	color				: white;		
+}
+
+div.pagination a:hover, div.pagination a:active {
+	border				: 1px solid #2b55af;
+	background-image	: none;
+	background-color	: #3666d4;
+	color				: #fff;
+}
+	
+div.pagination span.current {
+	margin-right		: 3px;
+	padding				: 2px 6px;		
+	font-weight			: bold;
+	color				: #000;
+}
+
+div.pagination span.disabled {
+	display				: none;
+}
+	
+div.pagination a.next {
+	border				: 2px solid #ccdbe4;
+	margin				: 0 0 0 10px;
+
+	
+div.pagination a.next:hover {
+	border				: 2px solid #2b55af;
+}
+	
+div.pagination a.prev {
+	border				: 2px solid #ccdbe4;
+	margin				: 0 10px 0 0;
+}
+
+div.pagination a.prev:hover {
+	border				: 2px solid #2b55af;
+}
+/* END PAGINATION */

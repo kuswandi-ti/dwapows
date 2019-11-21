@@ -1,0 +1,2 @@
+<a href="http://dwa.co.id/" target="_blank"><font color="E0EB29"><b>PT. Dasa Windu Agung, <?= date("Y"); ?></b></font></a>
+<p><i>Website ini akan tampil maksimal jika menggunakan browser <b>Mozilla Firefox</b> dan <b>Google Chrome</b> dengan minimal resolusi <b>1280 x 768 pixel</b></i></p>

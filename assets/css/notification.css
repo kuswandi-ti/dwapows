@@ -1,0 +1,47 @@
+.clearfix {
+	*zoom				: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display				: table;
+	line-height			: 0;
+	content				: "";
+}
+
+.clearfix:after {
+	clear				: both;
+}
+
+.fluid {
+	overflow			: hidden;
+	font-family			: 'Open Sans', Helvetica Neue, Helvetica, Sans-serif;
+}
+
+section.notification {
+	float				: right;
+}
+
+section.notification li {
+	list-style			: none;
+	padding				: 5px 10px;
+	margin				: 5px 10px 0 0;
+	float				: left;
+	cursor				: pointer;
+	display				: inline-block;
+}
+
+section.notification li:after {
+	content				: attr(data-count);
+	font-size			: 18px;
+	background			: #cc0001;
+	border-radius		: 3px;
+	color				: #fff;
+	z-index				: 99999;
+	font-weight			: 600;
+	padding				: 4px 7px;
+	box-shadow			: -1px 2px 3px rgba(0,0,0,.3), inset 0 2px 5px rgba(225,225,225,.3);
+	position			: relative;
+	top					: -12px;
+	left				: 7px;
+}
